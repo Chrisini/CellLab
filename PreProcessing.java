@@ -16,7 +16,7 @@ public class PreProcessing {
 	 * Returns a single-colour image that will be used as corrected background
 	 */
 	MBFImage mean_colour_image(MBFImage image) throws IOException {
-
+		// clone image
 		MBFImage clone = image.clone();
 
 		float red = 0;
@@ -56,7 +56,6 @@ public class PreProcessing {
 	 * Gets rid of illuminated background and replaces it with single-coloured background
 	 */
 	void illumination_correction(final File imgFile) throws MalformedURLException, IOException {
-
 		// Read image
 		MBFImage original_image = ImageUtilities.readMBF(imgFile);
 
@@ -98,8 +97,6 @@ public class PreProcessing {
 	}
 
 	public static void main(String[] args) throws MalformedURLException, IOException {
-		// TODO Auto-generated method stub
-
 		// Path to image
 		final File imgFile = new File("C:\\Users\\Prinzessin\\Documents\\LifeSci\\named_images\\cell57.jpg");
 		
@@ -111,6 +108,5 @@ public class PreProcessing {
 		
 		// Normalisation
 		preproc.normalise_image(imgFile);
-
 	}
 }
