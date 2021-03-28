@@ -6,6 +6,7 @@ Bachelor's project
 
 
 ## Java / OpenIMAJ / Maven
+* PreProcessing.java: image normalisation; illuminance correction/background subtraction
 
 
 ## C / OpenCV
