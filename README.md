@@ -16,3 +16,4 @@ Bachelor's project
 
 
 ## Python / TensorFlow / Mask R-CNN matterport implementation
+* preprocessing.py: image normalisation with numpy; plotting histogram with (1) opencv and (2) numpy
