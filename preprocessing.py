@@ -4,7 +4,23 @@ import matplotlib.pyplot as plt
 
 import cv2
 
-# plot histogram using opencv
+# plot histogram with matplotlib + numpy, recommended
+def np_show_histograms(image):
+    
+    channels = np.array(image).T
+    
+    colours = ('r','g','b')
+    plt.figure()
+    for i, colour in enumerate(colours):      
+        
+        histo = np.histogram(channels[i].flatten(), bins=256, range=[0, 256])
+            
+        y_pos = np.arange(len(histo[0]))
+        performance = histo[0]
+        
+        plt.bar(y_pos, performance, align='center', alpha=0.5, color=colour)
+
+# plot histogram with matplotlib + opencv, not recommended
 def cv_show_histograms(image):
     
     # convert pillow to opencv image
@@ -18,8 +34,8 @@ def cv_show_histograms(image):
         plt.xlim([0,256])
     plt.show()
 
-# plot histogram using numpy
-def np_show_histograms(image):
+# plot histogram with matplotlib + numpy, not recommended
+def np_show_histograms_old(image):
     # get 2D arrays of RGB channels
     channels = np.array(image).T
     
@@ -49,8 +65,6 @@ def numpy_normalisation():
     image_scaled = (image_scaled*255.0).astype(np.uint8)
     image_scaled = Image.fromarray(image_scaled, 'RGB')
     image_scaled.show()
-    
-    cv_show_histograms(image_original)
-    cv_show_histograms(image_scaled)
+
     np_show_histograms(image_original)
     np_show_histograms(image_scaled)
