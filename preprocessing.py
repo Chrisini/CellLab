@@ -2,7 +2,7 @@ from PIL import Image, ImageOps
 import numpy as np
 import matplotlib.pyplot as plt
 
-def save_hist_and_resul(image, mode):
+def save_hist_and_result(image, mode):
     
     channels = np.array(image).T
     
