@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Prinzessin/cell/workspace/segmentation/inc/cell.hpp
+
+/home/Prinzessin/cell/workspace/segmentation/inc/segmentation.hpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+opencv2/highgui/highgui.hpp
+/home/Prinzessin/cell/workspace/segmentation/inc/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+/home/Prinzessin/cell/workspace/segmentation/inc/opencv2/imgproc/imgproc.hpp
+iostream
+-
+stdio.h
+-
+stdlib.h
+-
+opencv2/core/utility.hpp
+-
+opencv2/imgproc.hpp
+/home/Prinzessin/cell/workspace/segmentation/inc/opencv2/imgproc.hpp
+opencv2/imgcodecs.hpp
+/home/Prinzessin/cell/workspace/segmentation/inc/opencv2/imgcodecs.hpp
+opencv2/highgui.hpp
+/home/Prinzessin/cell/workspace/segmentation/inc/opencv2/highgui.hpp
+
+/home/Prinzessin/cell/workspace/segmentation/segmentation.cpp
+inc/segmentation.hpp
+/home/Prinzessin/cell/workspace/segmentation/inc/segmentation.hpp
+inc/cell.hpp
+/home/Prinzessin/cell/workspace/segmentation/inc/cell.hpp
+

@@ -1,0 +1,3 @@
+/home/Prinzessin/cell/workspace/segmentation/CMakeFiles/rebuild_cache.dir
+/home/Prinzessin/cell/workspace/segmentation/CMakeFiles/segmentation.dir
+/home/Prinzessin/cell/workspace/segmentation/CMakeFiles/edit_cache.dir

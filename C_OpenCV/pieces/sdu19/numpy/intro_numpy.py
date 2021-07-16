@@ -1,0 +1,18 @@
+import numpy as np
+
+print("one dimensional array ----------")
+a = np.array([1,2,3])
+print("Array a:", a)
+print("Typ:", type(a))
+print("Shape:", a.shape, "(rows, colums)")
+print("Components of array:", a[0], a[1], a[2])
+print()
+print("two dimensional array ----------")
+b = np.array([[1,2,3],[4,5,6]])
+print("Array b:")
+print(b)
+print()
+c = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+print("Array c:")
+print(c)
+print("Number at (3,3):", c[2,2])
